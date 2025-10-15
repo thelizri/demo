@@ -16,4 +16,4 @@ updates:
   - package-ecosystem: helm
     directory: "/charts"
     schedule:
-      interval: "weekly"
+      interval: "hourly"
