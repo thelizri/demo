@@ -1,27 +1,10 @@
 {
+  "baseBranches": ["main"],
+  "rebaseWhen": "conflicted",
+  "labels": ["dependencies"],
+  "automergeStrategy": "merge-commit",
   "branchPrefix": "test-renovate/",
-  "dryRun": "full",
   "username": "renovate-release",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
-  "onboarding": false,
-  "platform": "github",
-  "forkProcessing": "enabled",
-  "repositories": [
-    "thelizri/demo"
-  ],
-  "packageRules": [
-    {
-      "description": "lockFileMaintenance",
-      "matchUpdateTypes": [
-        "pin",
-        "digest",
-        "patch",
-        "minor",
-        "major",
-        "lockFileMaintenance"
-      ],
-      "dependencyDashboardApproval": false,
-      "minimumReleaseAge": 0
-    }
-  ]
+  "platform": "github"
 }
