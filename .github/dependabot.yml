@@ -16,4 +16,4 @@ updates:
   - package-ecosystem: helm
     directory: "**/*"
     schedule:
-      interval: "hourly"
+      interval: "daily"
