@@ -1,0 +1,12 @@
+apiVersion: v2
+name: cnpg
+description: Wrapper chart for cnpg
+type: application
+version: "0.26.0"
+#appVersion: "1.16.0" # This can be the appVersion of your wrapper, TODO: do we need this? Test without and see what it looks like
+
+dependencies:
+  - name: cloudnative-pg
+    # The version of the upstream chart you want to use
+    version: "0.26.0"
+    repository: "https://cloudnative-pg.github.io/charts"

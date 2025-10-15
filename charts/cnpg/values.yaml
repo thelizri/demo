@@ -1,0 +1,10 @@
+cloudnative-pg:
+  image:
+    # TODO must pull upstream images and push images to here in the github action
+    #   or use a Artifact Registry Remote Repo that points to the upstream CNPG image repo (which stores/caches images on first pull)
+    # After its done we can either
+    #   - run trivy on the images (pulling from our repo)
+    #     for example 'trivy image europe-docker.pkg.dev/ai-training-309907/img/agentaton/agent-proxy', trivy can output in different formats usable in github actions
+    #   - or pull results from artifact registry artifact analysis (not sure this is better than trivy really, but would like to test both)
+
+    repository: europe-docker.pkg.dev/modfin/images/cnpg
