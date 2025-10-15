@@ -12,3 +12,4 @@ jobs:
         uses: renovatebot/github-action@v43.0.16
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
+          renovate-extra-flags: "--repository=${{ github.repository }}"
