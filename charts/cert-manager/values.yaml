@@ -1,0 +1,20 @@
+cert-manager:
+  image:
+    repository: europe-docker.pkg.dev/modfin/images/cert-manager-controller
+    pullPolicy: IfNotPresent
+  webhook:
+    image:
+      repository: europe-docker.pkg.dev/modfin/images/cert-manager-webhook
+      pullPolicy: IfNotPresent
+  cainjector:
+    image:
+      repository: europe-docker.pkg.dev/modfin/images/cert-manager-cainjector
+      pullPolicy: IfNotPresent
+  acmesolver:
+    image:
+      repository: europe-docker.pkg.dev/modfin/images/cert-manager-acmesolver
+      pullPolicy: IfNotPresent
+  startupapicheck:
+    image:
+      repository: europe-docker.pkg.dev/modfin/images/cert-manager-startupapicheck
+      pullPolicy: IfNotPresent
